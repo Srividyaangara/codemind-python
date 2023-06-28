@@ -1,8 +1,10 @@
-n=(input().split())
-k=0
-for i in range (0,int(n[0])):
-    a=input().split()
-    for j in range(0,int(n[1])):
-        if (j!=0 and j!=int(n[1])-1 and i!=0 and i!=int(n[0])-1):
-            k=k+int(a[j])
-print (k)           
+n,m=map(int,input().split())
+mat=[]
+for i in range(n):
+    il=list(map(int,input().split()))
+    mat.append(il)
+x=[]
+for i in range(1,n-1):
+    for j in range(1,m-1):
+        x.append(mat[i][j])
+print(sum(x))
