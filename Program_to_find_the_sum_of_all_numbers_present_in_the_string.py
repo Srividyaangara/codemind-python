@@ -1,6 +1,8 @@
 s=input()
-ans=0
+x=[]
 for i in s:
-    if i>='0' and i<='9':
-        ans=ans+ord(i)-48
-print(ans)
+    if i not in "123456789":
+        continue
+    else:
+        x.append(int(i))
+print(sum(x))
