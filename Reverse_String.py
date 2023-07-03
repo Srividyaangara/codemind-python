@@ -1,4 +1,4 @@
-x = list(map(str,input().split()))
-x.reverse()
-for i in x:
-    print(i,end=" ")
+s=input().split()
+p=list(s)
+l=p[::-1]
+print(*l)
