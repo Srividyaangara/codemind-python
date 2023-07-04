@@ -1,4 +1,4 @@
-radius=int(input())
-pie=3.14
-area=pie*radius*radius
-print("{:.2f}".format(area))
+r=int(input())
+area=3.14*r*r
+a="{:.2f}".format(area)
+print(a)
