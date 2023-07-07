@@ -1,12 +1,7 @@
 n=int(input())
-l=n
-s=0
-while n>0:
-    r=n%10
-    s=(s*10)+r
-    n=n//10
-
-if s==l:
+n=str(n)
+l=int(n[::-1])
+if int(n)==l:
     print("True")
 else:
     print("False")
